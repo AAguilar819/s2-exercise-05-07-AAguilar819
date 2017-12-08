@@ -49,7 +49,7 @@
 
         <div class="formRow">
           <label for="name">Name*</label>
-          <input type="text" name="custName" id="name" placeholder="First and Last name">
+          <input type="text" name="custName" id="name" placeholder="First and Last name" required>
         </div>
         <div class="formRow">
           <label for="street">Street Address</label>
@@ -65,15 +65,15 @@
         </div>
         <div class="formRow">
           <label for="zip">Postal Code</label>
-          <input type="text" name="custZip" id="zip" placeholder="nnnnn(-nnnn)">
+          <input type="text" name="custZip" id="zip" placeholder="nnnnn(-nnnn)" pattern="^\d{5}(-\d{4})?$">
         </div>
         <div class="formRow">
           <label for="phone">Phone Number</label>
-          <input type="text" name="custPhone" id="phone" placeholder="(nnn) nnn-nnnn">
+          <input type="text" name="custPhone" id="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
         </div>
         <div class="formRow">
           <label for="email">E-Mail*</label>
-          <input type="email" name="custEmail" id="email">
+          <input type="email" name="custEmail" id="email" required>
         </div>
         <div class="formRow">
           <label for="info">Where did you hear about us?<br>(Select all that apply)</label>
